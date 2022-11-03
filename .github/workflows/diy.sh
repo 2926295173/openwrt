@@ -31,6 +31,11 @@ popd
 git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git package/mentohust
 git clone https://github.com/BoringCat/luci-app-mentohust.git package/luci-app-mentohust
 
+rm -rf .config
+
+mv /home/runner/work/openwrt/openwrt/.config /home/runner/work/openwrt/openwrt/Downloads/OpenWrt/.config
+
+
 # make menuconfig
 
 #图形化操作
