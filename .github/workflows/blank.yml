@@ -29,5 +29,13 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: mentohust.ipk
-          path: bin/packages/mipsel_24kc/base/mentohust*
+          path: Downloads/OpenWrt/bin/packages/mipsel_24kc/base/mentohust*
+      - uses: actions/upload-artifact@v3
+        with:
+          name: libpcap.ipk
+          path: Downloads/OpenWrt/bin/packages/mipsel_24kc/base/libpcap*
+      - uses: actions/upload-artifact@v3
+        with:
+          name: luci-app-mentohust.ipk
+          path: Downloads/OpenWrt/bin/packages/mipsel_24kc/base/luci-app-mentohust*
     
