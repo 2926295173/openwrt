@@ -37,4 +37,3 @@ git clone https://github.com/BoringCat/luci-app-mentohust.git package/luci-app-m
 
 make package/mentohust/compile V=s
 make package/luci-app-mentohust/compile V=s
-cd bin/packages/mipsel_24kc/base  *.ipk
