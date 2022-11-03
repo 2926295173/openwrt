@@ -25,15 +25,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - name: Create release
-        id: release
-        uses: ncipollo/release-action@v1
+      
+      - uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.DATE }} 常用ipk
-          allowUpdates: true
-          tag: ${{ env.FILE_NAME }}
-          commit: main
-          token: ${{ secrets.RELEASES_TOKEN }}
-          body: |
-          artifacts: bin/packages/mipsel_24kc/base/*
+          name: mentohust.ipk
+          path: bin/packages/mipsel_24kc/base/mentohust*
     
