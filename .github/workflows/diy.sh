@@ -5,7 +5,7 @@
 # 2.下载文件
 # mkdir Downloads
 
-cd Downloads/
+cd Downloads/OpenWrt
 
 # wget https://downloads.openwrt.org/snapshots/targets/ramips/mt76x8/openwrt-sdk-ramips-mt76x8_gcc-11.3.0_musl.Linux-x86_64.tar.xz
 
@@ -17,10 +17,10 @@ cd Downloads/
 
 # rm-rf openwrt-sdk-22.03.2-ramips-mt76x8_gcc-11.2.0_musl.Linux-x86_64.tar.xz
 
-cd OpenWrt
+# cd OpenWrt
 
-./scripts/feeds update -a
-./scripts/feeds install libpcap
+#./scripts/feeds update -a
+#./scripts/feeds install libpcap
 
 # 编译 po2lmo (如果有po2lmo可跳过)
 git clone https://github.com/openwrt-dev/po2lmo.git
