@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 1.更新系统软件包
-sudo apt install -y git curl build-essential libncurses5-dev zlib1g-dev gawk flex quilt libssl-dev xsltproc libxml-parser-perl mercurial bzr ecj cvs unzip
+#sudo apt install -y git curl build-essential libncurses5-dev zlib1g-dev gawk flex quilt libssl-dev xsltproc libxml-parser-perl mercurial bzr ecj cvs unzip
 # 2.下载文件
 mkdir Downloads
 
