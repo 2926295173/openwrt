@@ -28,7 +28,15 @@ jobs:
           mv openwrt-sdk-22.03.2-ramips-mt76x8_gcc-11.2.0_musl.Linux-x86_64 OpenWrt
           rm -rf openwrt-sdk-22.03.2-ramips-mt76x8_gcc-11.2.0_musl.Linux-x86_64.tar.xz
       - name: feeds update
-        run: cd Downloads/OpenWrt && ./scripts/feeds update -a && ./scripts/feeds install libpcap
+        run: |
+          cd Downloads/OpenWrt && ./scripts/feeds update -a 
+          ./scripts/feeds install libpcap
+          ./scripts/feeds install curl
+          ./scripts/feeds install unzip
+          ./scripts/feeds install libcap-bin 
+          ./scripts/feeds install libcap dnsmasq-full coreutils coreutils-nohup ipset ip-full ruby ruby-yaml ca-certificates
+          
+          
 
 
       - name: Run a one-line script
