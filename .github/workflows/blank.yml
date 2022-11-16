@@ -26,7 +26,7 @@ jobs:
           wget https://downloads.openwrt.org/releases/22.03.2/targets/ramips/mt76x8/openwrt-sdk-22.03.2-ramips-mt76x8_gcc-11.2.0_musl.Linux-x86_64.tar.xz
           tar -Jxf openwrt-sdk-22.03.2-ramips-mt76x8_gcc-11.2.0_musl.Linux-x86_64.tar.xz
           mv openwrt-sdk-22.03.2-ramips-mt76x8_gcc-11.2.0_musl.Linux-x86_64 OpenWrt
-          rm-rf openwrt-sdk-22.03.2-ramips-mt76x8_gcc-11.2.0_musl.Linux-x86_64.tar.xz
+          rm -rf openwrt-sdk-22.03.2-ramips-mt76x8_gcc-11.2.0_musl.Linux-x86_64.tar.xz
       - name: feeds update
         run: cd Downloads/OpenWrt && ./scripts/feeds update -a && ./scripts/feeds install libpcap
 
