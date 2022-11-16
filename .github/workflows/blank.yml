@@ -16,6 +16,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      
+      - name: Install requirements
+        run: sudo apt install -y git curl build-essential libncurses5-dev zlib1g-dev gawk flex quilt libssl-dev xsltproc libxml-parser-perl mercurial bzr ecj cvs unzip
 
       - name: Run a one-line script
         run: chmod +x .github/workflows/diy.sh && .github/workflows/diy.sh
