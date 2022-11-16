@@ -36,6 +36,6 @@ jobs:
           path: Downloads/OpenWrt/bin/packages/mipsel_24kc/base/libpcap*
       - uses: actions/upload-artifact@v3
         with:
-          name: luci-app-mentohust.zip
+          name: luci-app-openclash.zip
           path: Downloads/OpenWrt/bin/packages/mipsel_24kc/base/luci-app-openclash*
     
