@@ -30,6 +30,9 @@ popd
 
 git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git package/mentohust
 git clone https://github.com/BoringCat/luci-app-mentohust.git package/luci-app-mentohust
+git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+
+
 
 rm -rf .config
 
@@ -40,5 +43,6 @@ mv /home/runner/work/openwrt/openwrt/.config /home/runner/work/openwrt/openwrt/D
 
 #图形化操作
 
-make package/mentohust/compile V=s
-make package/luci-app-mentohust/compile V=s
+make package/mentohust/compile V=99
+make package/luci-app-mentohust/compile V=99
+make package/luci-app-openclash/luci-app-openclash/compile V=99
