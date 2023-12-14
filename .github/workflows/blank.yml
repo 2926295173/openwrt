@@ -48,15 +48,15 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: mentohust.zip
           path: Downloads/OpenWrt/bin/packages/mipsel_24kc/base/mentohust*
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: libpcap.zip
           path: Downloads/OpenWrt/bin/packages/mipsel_24kc/base/libpcap*
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: luci-app-openclash.zip
           path: Downloads/OpenWrt/bin/packages/mipsel_24kc/base/luci-app-openclash*
